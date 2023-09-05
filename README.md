@@ -18,7 +18,7 @@ python3 -m venv ./myenv
 # 仮想環境に入る
 source myenv/bin/activate
 
-# pip の更新
+# pip, setuptools の更新
 pip install --upgrade pip
 pip install --upgrade setuptools
 
