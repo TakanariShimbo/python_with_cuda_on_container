@@ -20,9 +20,15 @@ source myenv/bin/activate
 
 # pip の更新
 pip install --upgrade pip
+pip install --upgrade setuptools
 
 # お好みで必要なライブラリのインストール
 pip install xxxx
+
+# example
+pip install lit
+pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+pip install jupyter
 ```
 
 # 使用時
@@ -33,4 +39,5 @@ pip install xxxx
 
 docker exec -it container_python39_with_cuda /bin/bash
 source myenv/bin/activate
+jupyter lab --ip 0.0.0.0 --no-browser --allow-root
 ```
