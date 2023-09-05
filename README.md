@@ -26,7 +26,8 @@ pip install --upgrade setuptools
 pip install xxxx
 
 # example
-pip install lit
+# もし lit install 時にエラーが発生する場合は以下コマンドで先にインストールしておく
+# pip install lit==15.0.7
 pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
 pip install jupyter
 ```
@@ -39,5 +40,7 @@ pip install jupyter
 
 docker exec -it container_python39_with_cuda /bin/bash
 source myenv/bin/activate
+
+# jupyter 使用の場合
 jupyter lab --ip 0.0.0.0 --no-browser --allow-root
 ```
