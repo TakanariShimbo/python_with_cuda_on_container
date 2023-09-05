@@ -19,9 +19,10 @@ code .
 docker-compose up -d
 docker exec -it container_python39_with_cuda /bin/bash
 
-# 3. 仮想環境作成し、アクティベート
+# 3. 仮想環境作成
 python3 -m venv ./myenv
 
+# 4. 仮想環境アクティベート
 # VS Code の場合
 # 右下から次の仮想環境を使用するように選択: /work/myenv/bin/python3
 # 選択後に新しいターミナルを起動
@@ -29,11 +30,11 @@ python3 -m venv ./myenv
 # それ以外の場合
 source myenv/bin/activate
 
-# 4. 仮想環境を初期化
+# 5. 仮想環境を初期化
 pip install --upgrade pip
 pip install --upgrade setuptools
 
-# 5. お好みで必要なライブラリのインストール
+# 6. お好みで必要なライブラリのインストール
 pip install xxxx
 
 # 以下サンプル
@@ -46,8 +47,8 @@ pip install xxxx
 
 # 使用時
 ```
-# まず、初回起動時同様に1, 2 を実施
-# 3 は仮想環境は作成ずみなので、アクティベートのみ
+# まず、初回起動時同様に1, 2, 4 を実施
+# 3, 5, 6 は仮想環境は作成ずみなのでスキップ
 
 # VS Code の場合
 # そのまま開発開始
