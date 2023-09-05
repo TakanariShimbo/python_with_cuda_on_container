@@ -1,0 +1,11 @@
+{
+  "name": "Dev Python With Cuda",
+  "dockerComposeFile": ["docker-compose.yml"],
+  "service": "python_with_cuda_server",
+  "extensions": [
+    "ms-python.black-formatter",
+    "ms-python.python",
+    "ms-python.vscode-pylance",
+  ],
+  "workspaceFolder": "/work",
+}

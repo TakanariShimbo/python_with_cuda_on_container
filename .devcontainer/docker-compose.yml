@@ -10,7 +10,7 @@ services:
     ports:
       - 8888:8888
     volumes:
-      - ./work:/work
+      - ./../work:/work
     working_dir: /work
     deploy:
       resources:
