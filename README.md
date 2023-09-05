@@ -23,7 +23,7 @@ docker exec -it container_python39_with_cuda /bin/bash
 python3 -m venv ./myenv
 
 # VS Code の場合
-# 右下から使用する仮想環境を選択
+# 右下から次の仮想環境を使用するように選択: /work/myenv/bin/python3
 # 選択後に新しいターミナルを起動
 
 # それ以外の場合
