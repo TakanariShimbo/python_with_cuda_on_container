@@ -6,6 +6,7 @@
     "ms-python.black-formatter",
     "ms-python.python",
     "ms-python.vscode-pylance",
+    "oderwat.indent-rainbow",
   ],
   "workspaceFolder": "/work",
 }
